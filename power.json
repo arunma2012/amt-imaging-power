@@ -1,0 +1,38 @@
+{
+  "name": "amt-imaging",
+  "displayName": "CAST - Making AI smarter",
+  "version": "1.0.0",
+  "description": "Empower your AI with deep software intelligence. Explore application architecture, trace business flows, analyze quality issues, and understand complex codebases through natural language queries. Connect CAST Imaging's enterprise-grade analysis platform directly to your AI assistant for instant insights into your entire application portfolio.",
+  "keywords": ["cast", "imaging", "architecture", "quality", "analysis", "mcp", "transactions", "dependencies", "software intelligence"],
+  "author": "AMT",
+  "mcpServers": {
+    "imaging": {
+      "type": "http",
+      "url": "${input:imaging-url}/mcp/",
+      "headers": {
+        "x-api-key": "${input:imaging-key}",
+        "x-user-tenant": "${input:imaging-tenant}"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "id": "imaging-url",
+      "type": "promptString",
+      "description": "CAST Imaging URL (e.g., https://presales-in.castsoftware.com)",
+      "required": true
+    },
+    {
+      "id": "imaging-key",
+      "type": "promptString",
+      "description": "CAST Imaging API Key",
+      "required": true
+    },
+    {
+      "id": "imaging-tenant",
+      "type": "promptString",
+      "description": "Imaging tenant/domain (leave empty if single tenant)",
+      "required": false
+    }
+  ]
+}
