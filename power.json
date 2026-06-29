@@ -5,6 +5,7 @@
   "description": "Empower your AI with deep software intelligence. Explore application architecture, trace business flows, analyze quality issues, and understand complex codebases through natural language queries. Connect CAST Imaging's enterprise-grade analysis platform directly to your AI assistant for instant insights into your entire application portfolio.",
   "keywords": ["cast", "imaging", "architecture", "quality", "analysis", "mcp", "transactions", "dependencies", "software intelligence"],
   "author": "AMT",
+  "icon": "https://raw.githubusercontent.com/arunma2012/amt-imaging-power/main/icon.png",
   "mcpServers": {
     "imaging": {
       "type": "http",
